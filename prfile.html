@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile card</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Inconsolata:wght@500&family=Poppins:wght@300&family=Roboto:wght@900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image {
+
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 3px;
+        border: 2px solid rgb(27, 27, 177);
+        border-radius: 50%;
+        
+
+
+
+
+
+
+    }
+
+    .image .profile-img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid azure;
+        
+
+
+
+
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 300px;
+        width: 100%;
+        background-color: rgb(201, 209, 221);
+        border-radius: 24px;
+        padding: 12px;
+        box-shadow: 0 7px 10px rgba(40, 73, 139, 0.5);
+        position:relative;
+
+
+    }
+    .profile::before{
+        content:"";
+        position: absolute;
+        top:0px;
+        left:0px;
+        height:36%;
+        width:100%;
+        border-radius:24px 24px 0 0 ;
+        background-color: #4070f4;
+    }
+
+
+    .profile .textr {
+        padding: 14px;
+        margin: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo a {
+        padding: 12px;
+
+        border-radius: 23px;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    #ac {
+        font-size: 24px;
+        font-weight: bold;
+    
+
+    }
+
+    #vc {
+        padding: 2px;
+        font-size: 17px;
+        font-weight: bolder;
+        font-family: 'Barlow', sans-serif;
+        font-family: 'Inconsolata', monospace;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .logo .link {
+        display: inline-flex;
+        flex-direction: column;
+        text-decoration: none;
+        margin: 0px 10px;
+        background-color: rgb(27, 119, 158);
+        font-size: 24px;
+        color: aliceblue;
+        align-items: center;
+        justify-content: center;
+        height: 34px;
+        width: 34px;
+
+    }
+    .logo .link:hover{
+        color:grey;
+    }
+    .logo #you{
+       background-color: rgb(200, 0, 0);
+    }
+    .logo #in{
+        background-color: rgb(241, 63, 176);
+    }
+    .logo #fa{
+        background-color: rgb(106, 45, 217);
+    }
+    .logo #twi{
+    
+    }
+    .profile .buttons{
+        margin:4px;
+        display:flex;
+        align-items: center;
+    }
+
+     .profile .button{
+        color: aliceblue;
+        font-weight: bolder;
+        font-size: 16px;
+        border:2px ;
+        border-radius: 9px;
+        margin-top: 10px ;
+        margin:15px;
+        padding:10px;
+        background-color: rgb(90, 90, 185);
+       cursor: pointer;
+       transition: all 0.5s ease;
+    }
+    
+    .profile .analytics a{
+        
+        text-decoration: none;
+        margin-top: 12px;
+        color:rgb(13, 11, 11);
+       font-weight:bold;
+       border-right: 2px solid rgb(132, 132, 225);
+    }
+    .profile .analytics .entities{
+       
+        align-items: center;
+        flex-direction: row;
+        
+        justify-content: center;
+
+        padding :0 15px
+    }
+    .profile .button:active{
+        background-color:white;
+        color: black;
+        box-shadow: 3px 4px grey ;
+    }
+    #lo{
+        border-right: none;
+    }
+    .entities i{
+        font-size: 18px;
+        margin-right: 6px;
+    }
+
+    
+    
+
+</style>
+
+<body>
+    <div class="profile">
+        <div class="image">
+            <img src="https://imgv3.fotor.com/images/slider-image/A-clear-image-of-a-woman-wearing-red-sharpened-by-Fotors-image-sharpener.jpg"
+                alt="" class="profile-img">
+        </div>
+        <div class="textr">
+            <span id="ac">Codinghub</span>
+            <span id="vc">youtube && skype</span>
+
+        </div>
+        <div class="logo">
+            <a href="" class="link" id="in">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="" class="link"id="fa">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="" class="link"id="you">
+                <i class='bx bxl-youtube'></i>
+
+            </a>
+            <a href="" class="link" id="twi">
+                <i class='bx bxl-twitter'></i>
+            </a>
+        </div>
+        <div class="buttons">
+            <button class="button"> Subscribe</button>
+            <button class="button">Message</button>
+        </div>
+        <div class="analytics">
+            <a href="" class="entities">
+
+               <i class='bx bx-heart' ></i>
+               <span class="number">22k</span>
+            </a>
+            <a href="" class="entities">
+                <i class='bx bx-share' ></i>
+                <span class="number">12k</span>
+            </a> 
+            <a href="" class="entities" id="lo">
+                <i class='bx bx-message-square-dots' ></i>
+                <span class="number">10k</span>
+            </a>
+             
+
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
